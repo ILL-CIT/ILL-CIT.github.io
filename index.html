@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>CUBIX Unblocker</title>
-  <link rel="stylesheet" href="style.css">
+	<title>Chess Board</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>CUBIX</h1>
-    <div class="unblocker">
-      <iframe id="unblocked-site" src="https://www.google.com" frameborder="0"></iframe>
-    </div>
-    <div class="url-form">
-      <form>
-        <input type="text" id="url-input" placeholder="Enter URL to Unblock">
-        <button type="submit" id="unblock-btn">Unblock</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="app.js"></script>
+	<div id="chessboard"></div>
+	<div id="controls">
+		<label for="player-select">Player:</label>
+		<select id="player-select">
+			<option value="white">White</option>
+			<option value="black">Black</option>
+		</select>
+		<button id="next-move-button">Next Move</button>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@stockfishjs/stockfishjs@13.0.0/dist/stockfish-13.0.0.min.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
