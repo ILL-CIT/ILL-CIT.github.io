@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Chess Board</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div id="chessboard"></div>
-	<div id="controls">
-		<label for="player-select">Player:</label>
-		<select id="player-select">
-			<option value="white">White</option>
-			<option value="black">Black</option>
-		</select>
-		<button id="next-move-button">Next Move</button>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@stockfishjs/stockfishjs@13.0.0/dist/stockfish-13.0.0.min.js"></script>
-	<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>ILL-CIT PROXY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>ILL-CIT PROXY</h1>
+      <form>
+        <label for="url-input">Enter the URL you want to access:</label>
+        <input type="text" id="url-input" name="url-input" placeholder="https://example.com">
+        <button type="button" id="submit-button">Go</button>
+      </form>
+      <iframe id="proxy-iframe" frameborder="0"></iframe>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
